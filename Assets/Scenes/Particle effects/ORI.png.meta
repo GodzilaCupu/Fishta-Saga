@@ -1,0 +1,375 @@
+fileFormatVersion: 2
+guid: 51e48e288d4b81540b41aead802ddfc4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6197147463566179685
+    second: 5 - W86Lf7x_0
+  - first:
+      213: -2455346483292393536
+    second: 5 - W86Lf7x_1
+  - first:
+      213: 6195380027215918243
+    second: 5 - W86Lf7x_2
+  - first:
+      213: 2596926170960039654
+    second: 5 - W86Lf7x_3
+  - first:
+      213: 2943612632456619842
+    second: 5 - W86Lf7x_4
+  - first:
+      213: 8520918952740647853
+    second: 5 - W86Lf7x_5
+  - first:
+      213: -1290194455840944141
+    second: 5 - W86Lf7x_6
+  - first:
+      213: 2390074831311145016
+    second: 5 - W86Lf7x_7
+  - first:
+      213: -1052730987600170286
+    second: 5 - W86Lf7x_8
+  - first:
+      213: 4125504558560594717
+    second: 5 - W86Lf7x_9
+  - first:
+      213: -5701278569472247923
+    second: 5 - W86Lf7x_10
+  - first:
+      213: -2548213209745717275
+    second: 5 - W86Lf7x_11
+  - first:
+      213: -1472201548655165660
+    second: 5 - W86Lf7x_12
+  - first:
+      213: -7872197097495786375
+    second: 5 - W86Lf7x_13
+  - first:
+      213: -2739948950409187735
+    second: 5 - W86Lf7x_14
+  - first:
+      213: -748097444968689354
+    second: 5 - W86Lf7x_15
+  - first:
+      213: -793327830100388551
+    second: 5 - W86Lf7x_16
+  - first:
+      213: -2227700037662304129
+    second: 5 - W86Lf7x_17
+  - first:
+      213: -6193101372184639933
+    second: 5 - W86Lf7x_18
+  - first:
+      213: 4783143787548701042
+    second: 5 - W86Lf7x_19
+  - first:
+      213: 193127447826632228
+    second: 5 - W86Lf7x_20
+  - first:
+      213: -3161947909162324467
+    second: 5 - W86Lf7x_21
+  - first:
+      213: 6408607446414665809
+    second: 5 - W86Lf7x_22
+  - first:
+      213: -3777415142802312390
+    second: 5 - W86Lf7x_23
+  - first:
+      213: -5609510364553617288
+    second: 5 - W86Lf7x_24
+  - first:
+      213: 7750557012293059081
+    second: 5 - W86Lf7x_25
+  - first:
+      213: -7286863044554336917
+    second: 5 - W86Lf7x_26
+  - first:
+      213: -6751147045698669976
+    second: 5 - W86Lf7x_27
+  - first:
+      213: 5566385456026907312
+    second: 5 - W86Lf7x_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 5 - W86Lf7x_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 302
+        width: 166
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d3392c8c0b00650800000000000000
+      internalID: 6197147463566179685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5 - W86Lf7x_1
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 294
+        width: 183
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf2ad6e16bdcedd0800000000000000
+      internalID: -2455346483292393536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5 - W86Lf7x_2
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 284
+        width: 204
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a431ca6f496af550800000000000000
+      internalID: 6195380027215918243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5 - W86Lf7x_3
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 279
+        width: 218
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee0df7e7922a0420800000000000000
+      internalID: 2596926170960039654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5 - W86Lf7x_4
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 15
+        width: 230
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247ede1e710d9d820800000000000000
+      internalID: 2943612632456619842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5 - W86Lf7x_5
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 16
+        width: 228
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3fff944a2604670800000000000000
+      internalID: 8520918952740647853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5 - W86Lf7x_6
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 12
+        width: 237
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff0c686afe481ee0800000000000000
+      internalID: -1290194455840944141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5 - W86Lf7x_7
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 15
+        width: 217
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83807ea55604b2120800000000000000
+      internalID: 2390074831311145016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

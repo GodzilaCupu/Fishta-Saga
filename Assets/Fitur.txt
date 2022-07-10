@@ -1,0 +1,29 @@
+Fitur -> 
+- player :
+	1. punya 3 nyawa (Done)
+	2. movement pake keyboard (WASD) - done 
+	3. akan berkurang darahnya jika terkena sampah / termakan ikan besar
+	4. jika darah player abis akan ulang dari level 1
+
+- fitur : 
+	1. random setiap 20-30 sec
+	2. skill invisible dari predator + nembus barang ( selama 10 sec)
+	3. skill Rage mode ( Buff Speed 20% selama 10 sec )
+	4. health turun dari atas
+
+- Achievement
+	1. achievement tiap stage turun random 
+	2. per map punya achievement yang beda
+	3. item achivement (mutiara, kerang, bintang laut, cangkang )
+
+- system 
+	1. per-stage ada target tertentu :
+		1. stage 1 makan 20 ikan
+		2. stage 2 makan 50 ikan
+		3. stage 3 makan 100 ikan
+	2. win condition pas target udah terpenuhi
+	3. Settings nya ada back to main menu dan audio(on/off)- done
+
+
+
+
