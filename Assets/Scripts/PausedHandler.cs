@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PausedHandler : MonoBehaviour
 {
+    [SerializeField] HealthHandler playerHealth;
     [SerializeField] GameObject _pausedPanel;
     [SerializeField] GameObject _SettingsPanel;
     bool isPaused;
@@ -45,9 +46,10 @@ public class PausedHandler : MonoBehaviour
     }
 
     private void SavedData(){
-        HealthHandler playerHealth = new HealthHandler();
         Database.SetProgress("LastHealth",playerHealth.PlayerHealth);
+        Database.SetPlayerAchivement("Starfish", Database.GetPlayerAchivement("Starfish"));
+        Database.SetPlayerAchivement("Shell", Database.GetPlayerAchivement("Shell"));
+        Database.SetPlayerAchivement("Pearl", Database.GetPlayerAchivement("Pearl"));
         // this will be save ikan kecil progres
-        // this will be save achivement
     }
 }

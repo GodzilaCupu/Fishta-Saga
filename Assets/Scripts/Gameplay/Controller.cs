@@ -13,11 +13,12 @@ public class Controller : MonoBehaviour
 
 
     [SerializeField] string nextLevelTo;
-    public GameObject winPanel;
+    [SerializeField] private GameObject winPanel;
+    [SerializeField] HealthHandler playerhealth;
     private void Start()
     {
-        thisScene = SceneManager.GetActiveScene();
         currentScore = 0;
+        thisScene = SceneManager.GetActiveScene();
         displayScore.text = currentScore.ToString();
         EventManager.current.onStageScore += GetScore;
 
@@ -68,5 +69,8 @@ public class Controller : MonoBehaviour
     public void NextToLevel()
     {
         SceneManager.LoadScene(nextLevelTo);
+        SaveHealth();
     }
+
+    private void SaveHealth() => Database.SetProgress("LastHealth", playerhealth.PlayerHealth);
 }

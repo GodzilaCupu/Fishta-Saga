@@ -54,15 +54,14 @@ public class HealthHandler : MonoBehaviour
         }
         if (sceneName.name == e_SceneName.Stage2.ToString())
         {
-            _currentHealth = PlayerHealth;
+            _currentHealth = Database.GetProgress("LastHealth");
             // _currentHealth = 3;
 
             return;
         }
         if (sceneName.name == e_SceneName.Stage3.ToString())
         {
-            // _currentHealth = 3;
-            _currentHealth = PlayerHealth;
+            _currentHealth = Database.GetProgress("LastHealth");
             return;
         }
         _currentHealth = Database.GetProgress("LastHealth");

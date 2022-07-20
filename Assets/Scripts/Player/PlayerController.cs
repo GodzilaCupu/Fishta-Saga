@@ -12,9 +12,10 @@ public class PlayerController : MonoBehaviour
 
     [Space(10)]
     [Header("Player Component")]
-    [SerializeField] private float playerSpeed = 2;
     [SerializeField] private Animator playerAnim;
+    [SerializeField] private float playerSpeed = 2;
     [SerializeField] private bool isImun;
+    private int score;
 
     private CapsuleCollider2D _playerCollider;
     private Vector2 _startPlayerPos;
@@ -163,17 +164,17 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-
         // ikan kecil
         if (other.gameObject.tag == "Ikan_Kecil")
         {
             AddHealth();
             Destroy(other.gameObject);
+            score += 1;
             EventManager.current.AddPlayerScore(1);
+            AudioManager.instance.PlaySound(ikanKecil);
             Debug.Log($"This Eat Fish ");
 
             // AudioSource.PlayClipAtPoint(ikanKecil, transform.position, volumeSound);
-            AudioManager.instance.PlaySound(ikanKecil);
             // ParticleFromPlayer.instance.PlayParticle();
         }
 

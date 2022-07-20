@@ -932,8 +932,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _controlOption: 1
-  playerSpeed: 5
   playerAnim: {fileID: 500176405}
+  playerSpeed: 5
   isImun: 0
   ikanKecil: {fileID: 8300000, guid: ba8664fb4a1e2c949ba42f1de2e99716, type: 3}
   ikanBesar: {fileID: 8300000, guid: cc792a1adce78b34789b493dd6118161, type: 3}
@@ -2238,6 +2238,7 @@ MonoBehaviour:
   displayScore: {fileID: 428225964}
   nextLevelTo: Stage3
   winPanel: {fileID: 780791120}
+  playerhealth: {fileID: 1020738432}
 --- !u!1 &1273790775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,6 +2537,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 468827253}
     m_Modifications:
+    - target: {fileID: 994437384, guid: e193d4bfd39f8dc4f8adb6f65298e28b, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1020738432}
     - target: {fileID: 994437384, guid: e193d4bfd39f8dc4f8adb6f65298e28b, type: 3}
       propertyPath: _SettingsPanel
       value: 

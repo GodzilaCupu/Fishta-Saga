@@ -172,7 +172,7 @@ MonoBehaviour:
   - {fileID: 8296508440277399030, guid: 73ae26d6af82f5042a4ee3e5b640ec7c, type: 3}
   Timer: 20
   currentPos: {fileID: 71570445}
-  soundSpawn: {fileID: 0}
+  soundSpawn: {fileID: 8300000, guid: 32ef5d543a735894393039691f44a900, type: 3}
 --- !u!1 &109898169
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,9 +876,9 @@ RectTransform:
   - {fileID: 369659468}
   - {fileID: 1020738430}
   - {fileID: 2139686682}
-  - {fileID: 1561300393}
   - {fileID: 1357543116}
   - {fileID: 994437383}
+  - {fileID: 1561300393}
   - {fileID: 1182322870}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1428,7 +1428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3594953941242435296, guid: a943257ad38f3ee48a77ecf4cac611a0, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3594953941242435296, guid: a943257ad38f3ee48a77ecf4cac611a0, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1819,6 +1819,7 @@ MonoBehaviour:
   displayScore: {fileID: 428225964}
   nextLevelTo: Stage2
   winPanel: {fileID: 2100461737}
+  playerhealth: {fileID: 1020738432}
 --- !u!1 &1273790775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,6 +2078,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 468827253}
     m_Modifications:
     - target: {fileID: 994437384, guid: e193d4bfd39f8dc4f8adb6f65298e28b, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 1020738432}
+    - target: {fileID: 994437384, guid: e193d4bfd39f8dc4f8adb6f65298e28b, type: 3}
       propertyPath: _SettingsPanel
       value: 
       objectReference: {fileID: 1685539218}
@@ -2154,7 +2159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8038605393785768624, guid: e193d4bfd39f8dc4f8adb6f65298e28b, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8038605393785768624, guid: e193d4bfd39f8dc4f8adb6f65298e28b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2643,7 +2648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 102147147282766729, guid: b8dc4548442bc284aa8b1c0934363a28, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 102147147282766729, guid: b8dc4548442bc284aa8b1c0934363a28, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2715,6 +2720,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 102147147282766729, guid: b8dc4548442bc284aa8b1c0934363a28, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102147147886153292, guid: b8dc4548442bc284aa8b1c0934363a28, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2967,5 +2976,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1268944977}
+    - target: {fileID: 6963397067414179579, guid: 3885dfb8f469a90448a9127c3d0c4865, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3885dfb8f469a90448a9127c3d0c4865, type: 3}
