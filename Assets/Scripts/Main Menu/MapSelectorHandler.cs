@@ -23,7 +23,7 @@ public class MapSelectorHandler : MonoBehaviour
         gameObject.transform.GetChild(0).gameObject.SetActive(false);
     }
 
-    private void OpenPanel()
+    public void OpenPanel()
     {
         if (gameObject.transform.GetChild(0).gameObject == null)
             return;

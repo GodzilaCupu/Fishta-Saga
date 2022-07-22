@@ -185,7 +185,7 @@ public class ButtonHandler : MonoBehaviour
 
     }
 
-    private void CloseMapSelectorPanel()
+    public void CloseMapSelectorPanel()
     {
         EventManager.current.CloseMapSelector();
         Debug.Log("It's Work");
