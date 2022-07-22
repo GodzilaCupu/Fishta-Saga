@@ -39,9 +39,8 @@ public class Controller : MonoBehaviour
         {
             // LevelUp();
             winPanel.SetActive(true);
-
+            EventManager.current.OpenPaused();
         }
-
     }
 
     private void LevelUp()

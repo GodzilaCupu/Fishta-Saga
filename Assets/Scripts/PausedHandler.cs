@@ -10,24 +10,17 @@ public class PausedHandler : MonoBehaviour
     [SerializeField] GameObject _SettingsPanel;
     bool isPaused;
 
-    private void Start() {
-        EventManager.current.onOpenPaused += Paused;
-        EventManager.current.onClosePaused += UnPaused;
-    }
-
-    private void OnDisable() {
-        EventManager.current.onOpenPaused -= Paused;
-        EventManager.current.onClosePaused -= UnPaused;
-    }
 
     #region Paused
     public void Paused(){
         isPaused = true;
+        EventManager.current.OpenPaused();
         _pausedPanel.SetActive(true);
     }
 
     public void UnPaused() {
         isPaused = false;
+        EventManager.current.ClosePaused();
         _pausedPanel.SetActive(false);   
         SavedData();
     }
@@ -44,6 +37,8 @@ public class PausedHandler : MonoBehaviour
 
         // Buat randombackgound tidak ke reset
     }
+
+    public void BackToMainMenu() => SceneManager.LoadScene("MainMenu");
 
     private void SavedData(){
         Database.SetProgress("LastHealth",playerHealth.PlayerHealth);

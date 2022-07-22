@@ -7,15 +7,25 @@ public class Ikan : MonoBehaviour
     public Vector2 _targetPos;
     [SerializeField] float _speed;
 
+    private bool isPaused;
     // Start is called before the first frame update
     void Start()
     {
         GenerateTargetPos();
+        EventManager.current.onOpenPaused += () => isPaused = true;
+        EventManager.current.onClosePaused += () => isPaused = false;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.current.onOpenPaused -= () => isPaused = true;
+        EventManager.current.onClosePaused -= () => isPaused = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isPaused) return;
         Move();
     }
 

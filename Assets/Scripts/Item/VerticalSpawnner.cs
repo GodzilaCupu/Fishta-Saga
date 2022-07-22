@@ -19,15 +19,13 @@ public class VerticalSpawnner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentTimer > 0)
+        if(currentTimer < 0f)
         {
-            currentTimer -= Time.deltaTime;
+            currentTimer = Timer;
+            GetSpawnObj();
         }
         else
-        {
-            GetSpawnObj();
-            currentTimer = Timer;
-        }
+        currentTimer -= Time.deltaTime;
     }
 
     private void GetSpawnObj()
@@ -37,7 +35,5 @@ public class VerticalSpawnner : MonoBehaviour
         Vector2 newSpawnPos = new Vector2(xAxis, currentPos.position.y);
         Instantiate(ObjSpawn[i], newSpawnPos, Quaternion.identity);
         AudioManager.instance.PlaySound(soundSpawn);
-        return;
-
     }
 }

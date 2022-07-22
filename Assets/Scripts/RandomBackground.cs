@@ -17,10 +17,4 @@ public class RandomBackground : MonoBehaviour
         randomBackground = Random.Range(0, sprites.Length);
         spriteRendererBG.sprite = sprites[randomBackground];
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

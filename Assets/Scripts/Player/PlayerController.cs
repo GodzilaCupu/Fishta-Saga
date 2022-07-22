@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private CapsuleCollider2D _playerCollider;
     private Vector2 _startPlayerPos;
     private Vector2 _newPlayerPos;
-    // private Rigidbody2D rb;
+    private Rigidbody2D rb;
 
     private SpriteRenderer _playerSprite;
     private bool isPaused;
@@ -35,11 +35,11 @@ public class PlayerController : MonoBehaviour
     {
         _playerCollider = gameObject.GetComponent<CapsuleCollider2D>();
         _newPlayerPos = transform.position;
-        // rb = GetComponent<Rigidbody2D>();
+         rb = GetComponent<Rigidbody2D>();
         _playerSprite = GetComponent<SpriteRenderer>();
     }
 
-    private void OnEnable()
+    private void Start()
     {
         EventManager.current.onOpenPaused += Paused;
         EventManager.current.onClosePaused += UnPaused;
@@ -58,8 +58,11 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         if (isPaused)
+        {
+            rb.simulated = false;
             return;
-
+        }
+        rb.simulated = true;
         GetControlType(_controlOption);
     }
 
@@ -211,31 +214,28 @@ public class PlayerController : MonoBehaviour
         // Achivement perl
         if (other.gameObject.tag == "Perl")
         {
-            int perl = Database.GetPlayerAchivement("Perl");
-            Database.SetPlayerAchivement("Perl", perl + 1);
             Destroy(other.gameObject);
-            Debug.Log($" You got Perl");
+            Database.SetPlayerAchivement("Perl", Database.GetPlayerAchivement("Perl") + 1);
             AudioManager.instance.PlaySound(achivement);
+            Debug.Log($" You got Perl");
         }
 
         // Achivement Starfish
         if (other.gameObject.tag == "Starfish")
         {
-            int starfish = Database.GetPlayerAchivement("Starfish");
-            Database.SetPlayerAchivement("Starfish", starfish + 1);
             Destroy(other.gameObject);
-            Debug.Log($"You got Starfish");
+            Database.SetPlayerAchivement("Starfish", Database.GetPlayerAchivement("Starfish") + 1);
             AudioManager.instance.PlaySound(achivement);
+            Debug.Log($"You got Starfish");
         }
 
         // Achivement Shell
         if (other.gameObject.tag == "Shell")
         {
-            int shell = Database.GetPlayerAchivement("Shell");
-            Database.SetPlayerAchivement("Shell", shell + 1);
             Destroy(other.gameObject);
-            Debug.Log($"Shell");
+            Database.SetPlayerAchivement("Shell", Database.GetPlayerAchivement("Shell") + 1);
             AudioManager.instance.PlaySound(achivement);
+            Debug.Log($"Shell");
         }
 
 

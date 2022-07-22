@@ -859,7 +859,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &468827253
 RectTransform:
@@ -2067,7 +2067,7 @@ MonoBehaviour:
   ObjSpawn:
   - {fileID: 4990053047117532681, guid: c24da7cd279ba184cb6cc1ec84813394, type: 3}
   - {fileID: 8511660495628546143, guid: c7e222d2cf4b6984b92568bcb46dbd62, type: 3}
-  Timer: 10
+  Timer: 2
   currentPos: {fileID: 1700068301}
   soundSpawn: {fileID: 8300000, guid: 692ad8c85ae36e64e927da333f87d822, type: 3}
 --- !u!1001 &1747240208

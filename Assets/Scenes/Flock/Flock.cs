@@ -30,6 +30,7 @@ public class Flock : MonoBehaviour
 
     public float SquareAvoidanceRadius { get { return squareAvoidanceRadius; } }
 
+    private bool isPaused;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +38,8 @@ public class Flock : MonoBehaviour
         squareMaxSpeed = maxSpeed * maxSpeed;
         squareNeighborRadius = neighborRadius * neighborRadius;
         squareAvoidanceRadius = squareAvoidanceRadius * avoidanceRadiusMultiplier * avoidanceRadiusMultiplier;
-
+        EventManager.current.onOpenPaused += () => isPaused = true;
+        EventManager.current.onClosePaused += () => isPaused = false;
         for (int i = 0; i < startingCount; i++)
         {
             FlockAgent newAgent = Instantiate(
@@ -51,9 +53,18 @@ public class Flock : MonoBehaviour
         }
     }
 
+
+    private void OnDisable()
+    {
+        EventManager.current.onOpenPaused -= () => isPaused = true;
+        EventManager.current.onClosePaused -= () => isPaused = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (isPaused) return;
+
         foreach (FlockAgent agent in agents)
         {
             List<Transform> context = GetNearbyObjects(agent);

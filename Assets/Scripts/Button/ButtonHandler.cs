@@ -143,7 +143,7 @@ public class ButtonHandler : MonoBehaviour
     }
     #region Main Menu Button
 
-    private void StartGame()
+    public void StartGame()
     {
         EventManager.current.OpenMapSelector();
         Database.SetProgress("Level", 0);
