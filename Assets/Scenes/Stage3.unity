@@ -1231,14 +1231,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550055846}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22618a2f23708c045b5bef867b97e4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   assetSprite:
-  - {fileID: -3684916695731976022, guid: 7291fa732427b5d4fb97871076b60e84, type: 3}
-  - {fileID: 4376840515230175590, guid: 7291fa732427b5d4fb97871076b60e84, type: 3}
+  - {fileID: 21300000, guid: 4c916e22ab071cd41b05324d459a67de, type: 3}
+  - {fileID: 21300000, guid: cf6fdd6d22513454eba3c002c8a27dd1, type: 3}
 --- !u!61 &550055850
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550055846}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f89ecc7a2aab2434a9f54d9facfd6d81, type: 3}
   m_Name: 

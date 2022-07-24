@@ -31,9 +31,9 @@ public class PausedHandler : MonoBehaviour
         _pausedPanel.SetActive(false);
     }
 
-    public void RestartLevel(){
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
         // Buat randombackgound tidak ke reset
     }
